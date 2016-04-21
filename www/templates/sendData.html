@@ -1,0 +1,25 @@
+<ion-view view-title="Send Data">
+  <ion-content>
+    <ion-list>
+      <ion-item>
+        Fetched Data:
+      </ion-item>
+      <ion-item>
+        Location:{{ location }}<br/>
+        Contacts:{{ contacts.contacts }}
+      </ion-item>
+      <ion-item>
+        Note:<br/>
+        Both the functionality has been added:i.e<br/>
+         data is automatically sent as soon<br/>
+          as the data is fecthed<br/>
+          or<br/>
+          you can send it at button click below.
+      </ion-item>
+        <button class="button button-outline button-full button-positive" ng-click="sendData()">Send Data</button>
+      </ion-list>
+      <ion-item>
+        Status:{{ postDataResponse }}
+      </ion-item>
+  </ion-content>
+</ion-view>}
